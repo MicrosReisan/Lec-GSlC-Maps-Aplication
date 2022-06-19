@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             String langtext =etlang.getText().toString();
             String lattext =etlat.getText().toString();
             String nametext = etnama.getText().toString();
-            if(lattext.matches("^/d+$") || langtext.matches("^[0-9]") ){
+            if(!lattext.matches("^[0-9]*$") || !langtext.matches("^[0-9]*$") ){
                 Toast.makeText(this,"longitude and lattitude must be number",Toast.LENGTH_SHORT).show();
 
             }
